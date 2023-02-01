@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery View</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+            padding: 0px 50px;
+        }
+        .container img{
+            height: 200px;
+            width: 300px;
+        }
+        
+        .form-data{
+            padding: 0px 50px;
+            display: none;
+            height:200px;
+            width: 300px;
+            /* border: 2px solid; */
+            
+        }
+        .show-data{
+            padding: 0px 50px;
+            display: none;
+        }
+        .dice{
+            height: 200px;
+            width: 200px;
+            padding: 10px 40%;
+            display: none;
+        }
+        .congrates{
+            padding: 10px 35%;
+            display: none;
+            height: 300px;
+            width: 400px;
+        }
+        #num{
+            display: none;
+            padding-left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img"><img src="./img/a.jpg" class="img1" alt=""></div>
+        <div class="img"><img src="./img/b.jpg" class="img2" alt=""></div>
+        <div class="img"><img src="./img/c.jpg" class="img3" alt=""></div>
+        <div class="img"><img src="./img/d.jpg" class="img4" alt=""></div>
+    </div>
+    <div class="form">
+        <form action="" class="form-data">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required><br><br>
+            <label for="user">User Name</label><br>
+            <input type="text" name="user" id="user" placeholder="Enter User Name" required><br><br>
+            <input type="submit" value="Submit" id="btn">
+        </form>
+    </div>
+    <div class="show">
+        <form action="" class="show-data">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="show-name" readonly><br><br>
+            <label for="user">User Name</label><br>
+            <input type="text" name="user" id="show-user" readonly>
+        </form>
+    </div>
+    <div class="dice-img">
+        <img src="./img/dice.png" alt="dice-lodu" class="dice">
+        
+    </div>
+    <div class="dice-num">
+        <p id="num"></p>
+    </div>
+    <div class="congrates-img">
+        <img src="./img/congrats.png" alt="congratulation" class="congrates">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
